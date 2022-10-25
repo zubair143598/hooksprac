@@ -26,20 +26,18 @@ const UseState = () => {
   const [data, setData] = useState(reactInterneedata);
 
   function clearData() {
-    setData=[];
+    setData([]);
   }
 
   return (
-    <>  
-    <hr />
-    {
-        data.map((value)=><h1>Name:{value.name}</h1>)
-    }
-            <button onClick={clearData} className="btn btn-primary ">
-              Clear
-            </button>
-        
-      
+    <>
+      <hr />
+      {data.map((value) => (
+        <h1>Name:{value.name}</h1>
+      ))}
+      <button onClick={clearData} className="btn btn-primary ">
+        Clear
+      </button>
     </>
   );
 };

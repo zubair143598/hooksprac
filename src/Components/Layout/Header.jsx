@@ -5,9 +5,9 @@ const Header = () => {
   return (
     <nav className="navbar header  sticky-top navbar-expand-lg bg-light">
     <div className="container">
-      <a className=" nav-link active" aria-current="page" href="#">
-        <img src="./Assists/headerLogo.png  " alt="" className="logo p-1 rounded  border" />
-      </a>
+      <Link className=" nav-link active" aria-current="page" to="home">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0fX20XZ9WcCiM-_EINcthKnrldIsA2nNKAi77uAVmuxheapimECkmuEs2xebuUDx24s0&usqp=CAU  " alt="" className="logo w-25 border rounded-5 p-1 rounded  border" />
+      </Link>
 
       <button
         className=" color navbar-toggler"
@@ -23,13 +23,13 @@ const Header = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <Link className="nav-link fs-5 clr" aria-current="page" to="Home">
-            Features
+            <Link className="nav-link fs-5 clr" aria-current="page" to="SpreadOperator">
+            Spread operator
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link clr fs-5" to="OurTeam">
-            Litepaper
+            <Link className="nav-link clr fs-5" to="TodosList">
+            TodosList
             </Link>
           </li>
           <li className="nav-item">

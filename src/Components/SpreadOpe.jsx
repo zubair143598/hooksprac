@@ -18,12 +18,16 @@ const SpreadOpe = () => {
     <div className="container text-center">
         <hr />
       <div className="row">
-        <div className="col">
+        <div className="col-md-3"></div>
+        <div className="col-md-6  ">
+        
             <h1>Name: {myData.name} i work as a {myData.works} in Relymer and my degree is {myData.degree}</h1>
             <button className="btn btn-primary"
             onClick={update}
             >Update</button>
         </div>
+        <div className="col-md-3"></div>
+
       </div>
     </div>
   );
